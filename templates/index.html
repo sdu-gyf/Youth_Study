@@ -93,27 +93,24 @@
         }
     </style>
         <form class="smart-green" method="post">
-            <table  border="1"  border="red" width="1500">
+            <table  border="1"  border="red" width="500px">
             <h1>青年大学习截图获取</h1>
             <tr>
-                  <td height="50" width="200">季数：</td>
-                  <td><input class="textarea" name="s" type="number" id="s" value="7" maxlength="2" size="50" pattern="[0-9]" /></td>
+                  <td height="50" width="200px">季数：</td>
+                  <td width="1000px"><input class="textarea" name="s" type="number" width="100px" id="s" value="7" maxlength="2" size="50" pattern="[0-9]" /></td>
 				{% if message %}
 					<p style="color:red">{{ message }}</p>
 				{% endif %}
-				<h3 style="display:none" id="thanks">谢谢您</h3>
             </tr>
             <tr>
-                  <td height="50" width="200">期数：</td>
-                 <td><input class="textarea" name="e" type="number" id="e"  maxlength="2" size="50" pattern="[0-9]" /></td>
+                  <td height="50" width="200px">期数：</td>
+                 <td width="100px"><input class="textarea" name="e" type="number" id="e" width="100px"  maxlength="2" size="50" pattern="[0-9]" /></td>
 
             </tr>
 
 
             <table>
 			<button class="button" type="submit" >要截图！</button>
-            <button class="button" type="button" onclick="javascript:document.getElementById('wechat').style.display='inline';document.getElementById('thanks').style.display='inline'">打赏作者</button>
-		    <img src={{url_for('.static',_external=True,filename="img/wechat.png")}} style="display:none " id="wechat" width="111.8" height="153.4"/>
     </form>
 
 
